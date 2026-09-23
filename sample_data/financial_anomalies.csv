@@ -1,0 +1,301 @@
+transaction_id,timestamp,account_id,amount,merchant_category,country,is_flagged_fraud,anomaly_reason
+TXN-00001,2024-06-01 11:30:00,ACC-110,831.99,Office Equipment,United Kingdom,0,Normal business activity
+TXN-00002,2024-06-01 14:00:00,ACC-108,251.56,Cloud Hosting,France,0,Normal business activity
+TXN-00003,2024-06-01 16:30:00,ACC-119,800.64,Cloud Hosting,France,0,Normal business activity
+TXN-00004,2024-06-01 19:00:00,ACC-100,79.23,Office Equipment,United Kingdom,0,Normal business activity
+TXN-00005,2024-06-01 21:30:00,ACC-111,1107.18,Travel & Meals,United States,0,Normal business activity
+TXN-00006,2024-06-02 00:00:00,ACC-100,319.65,Travel & Meals,France,0,Normal business activity
+TXN-00007,2024-06-02 02:30:00,ACC-116,928.78,Cloud Hosting,United States,0,Normal business activity
+TXN-00008,2024-06-02 05:00:00,ACC-106,1405.52,Travel & Meals,United Kingdom,0,Normal business activity
+TXN-00009,2024-06-02 07:30:00,ACC-116,876.83,Contractor Payout,Germany,0,Normal business activity
+TXN-00010,2024-06-02 10:00:00,ACC-114,290.21,Office Equipment,United Kingdom,0,Normal business activity
+TXN-00011,2024-06-02 12:30:00,ACC-110,918.32,Cloud Hosting,United States,0,Normal business activity
+TXN-00012,2024-06-02 15:00:00,ACC-106,312.76,Travel & Meals,United States,0,Normal business activity
+TXN-00013,2024-06-02 17:30:00,ACC-117,1307.49,Software License,United Kingdom,0,Normal business activity
+TXN-00014,2024-06-02 20:00:00,ACC-109,1395.64,Legal & Compliance,United Kingdom,0,Normal business activity
+TXN-00015,2024-06-02 22:30:00,ACC-115,654.86,Legal & Compliance,United Kingdom,0,Normal business activity
+TXN-00016,2024-06-03 01:00:00,ACC-112,1158.25,Legal & Compliance,Germany,0,Normal business activity
+TXN-00017,2024-06-03 03:30:00,ACC-109,1457.47,Office Equipment,Germany,0,Normal business activity
+TXN-00018,2024-06-03 06:00:00,ACC-104,939.34,Cloud Hosting,United Kingdom,0,Normal business activity
+TXN-00019,2024-06-03 08:30:00,ACC-118,1241.66,Legal & Compliance,Germany,0,Normal business activity
+TXN-00020,2024-06-03 11:00:00,ACC-112,614.21,Travel & Meals,United Kingdom,0,Normal business activity
+TXN-00021,2024-06-03 13:30:00,ACC-112,549.71,Software License,Germany,0,Normal business activity
+TXN-00022,2024-06-03 16:00:00,ACC-110,1109.97,Contractor Payout,United States,0,Normal business activity
+TXN-00023,2024-06-03 18:30:00,ACC-120,1098.64,Office Equipment,United Kingdom,0,Normal business activity
+TXN-00024,2024-06-03 21:00:00,ACC-105,1312.01,Software License,France,0,Normal business activity
+TXN-00025,2024-06-03 23:30:00,ACC-119,901.46,Travel & Meals,United Kingdom,0,Normal business activity
+TXN-00026,2024-06-04 02:00:00,ACC-112,972.47,Office Equipment,United Kingdom,0,Normal business activity
+TXN-00027,2024-06-04 04:30:00,ACC-107,469.09,Office Equipment,France,0,Normal business activity
+TXN-00028,2024-06-04 07:00:00,ACC-111,791.15,Contractor Payout,United Kingdom,0,Normal business activity
+TXN-00029,2024-06-04 09:30:00,ACC-105,30.43,Office Equipment,United States,0,Normal business activity
+TXN-00030,2024-06-04 12:00:00,ACC-104,1518.47,Contractor Payout,United States,0,Normal business activity
+TXN-00031,2024-06-04 14:30:00,ACC-115,269.77,Legal & Compliance,United Kingdom,0,Normal business activity
+TXN-00032,2024-06-04 17:00:00,ACC-106,1336.23,Cloud Hosting,United Kingdom,0,Normal business activity
+TXN-00033,2024-06-04 19:30:00,ACC-109,745.0,Travel & Meals,France,0,Normal business activity
+TXN-00034,2024-06-04 22:00:00,ACC-118,672.98,Office Equipment,Germany,0,Normal business activity
+TXN-00035,2024-06-05 00:30:00,ACC-106,738.15,Contractor Payout,France,0,Normal business activity
+TXN-00036,2024-06-05 03:00:00,ACC-100,592.27,Cloud Hosting,United States,0,Normal business activity
+TXN-00037,2024-06-05 05:30:00,ACC-102,1001.31,Travel & Meals,Germany,0,Normal business activity
+TXN-00038,2024-06-05 08:00:00,ACC-118,450.08,Travel & Meals,United States,0,Normal business activity
+TXN-00039,2024-06-05 10:30:00,ACC-114,826.99,Contractor Payout,United Kingdom,0,Normal business activity
+TXN-00040,2024-06-05 13:00:00,ACC-114,562.49,Office Equipment,France,0,Normal business activity
+TXN-00041,2024-06-05 15:30:00,ACC-109,1153.42,Travel & Meals,Germany,0,Normal business activity
+TXN-00042,2024-06-05 18:00:00,ACC-113,239.69,Cloud Hosting,United Kingdom,0,Normal business activity
+TXN-00043,2024-06-05 20:30:00,ACC-119,107.3,Legal & Compliance,United States,0,Normal business activity
+TXN-00044,2024-06-05 23:00:00,ACC-105,1051.54,Legal & Compliance,Germany,0,Normal business activity
+TXN-00045,2024-06-06 01:30:00,ACC-103,1094.17,Travel & Meals,France,0,Normal business activity
+TXN-00046,2024-06-06 04:00:00,ACC-105,763.28,Office Equipment,France,0,Normal business activity
+TXN-00047,2024-06-06 06:30:00,ACC-117,1318.45,Office Equipment,France,0,Normal business activity
+TXN-00048,2024-06-06 09:00:00,ACC-106,578.09,Travel & Meals,United States,0,Normal business activity
+TXN-00049,2024-06-06 11:30:00,ACC-117,996.33,Software License,United Kingdom,0,Normal business activity
+TXN-00050,2024-06-06 14:00:00,ACC-110,926.34,Travel & Meals,United States,0,Normal business activity
+TXN-00051,2024-06-06 16:30:00,ACC-105,460.47,Office Equipment,United Kingdom,0,Normal business activity
+TXN-00052,2024-06-06 19:00:00,ACC-102,835.15,Legal & Compliance,France,0,Normal business activity
+TXN-00053,2024-06-06 21:30:00,ACC-114,832.51,Travel & Meals,United Kingdom,0,Normal business activity
+TXN-00054,2024-06-07 00:00:00,ACC-112,161.45,Software License,United Kingdom,0,Normal business activity
+TXN-00055,2024-06-07 02:30:00,ACC-108,1120.27,Software License,France,0,Normal business activity
+TXN-00056,2024-06-07 05:00:00,ACC-114,695.02,Travel & Meals,United States,0,Normal business activity
+TXN-00057,2024-06-07 07:30:00,ACC-102,74500.0,Software License,Germany,1,Sudden extreme transaction amount (Z-Score > 8.5) outside business hours
+TXN-00058,2024-06-07 10:00:00,ACC-107,1262.64,Legal & Compliance,United States,0,Normal business activity
+TXN-00059,2024-06-07 12:30:00,ACC-105,1350.43,Cloud Hosting,United Kingdom,0,Normal business activity
+TXN-00060,2024-06-07 15:00:00,ACC-119,731.46,Software License,United Kingdom,0,Normal business activity
+TXN-00061,2024-06-07 17:30:00,ACC-112,1266.37,Cloud Hosting,United Kingdom,0,Normal business activity
+TXN-00062,2024-06-07 20:00:00,ACC-100,1037.81,Legal & Compliance,United Kingdom,0,Normal business activity
+TXN-00063,2024-06-07 22:30:00,ACC-106,1120.81,Legal & Compliance,United Kingdom,0,Normal business activity
+TXN-00064,2024-06-08 01:00:00,ACC-117,631.24,Cloud Hosting,United States,0,Normal business activity
+TXN-00065,2024-06-08 03:30:00,ACC-116,220.85,Legal & Compliance,France,0,Normal business activity
+TXN-00066,2024-06-08 06:00:00,ACC-103,808.85,Travel & Meals,France,0,Normal business activity
+TXN-00067,2024-06-08 08:30:00,ACC-100,957.22,Software License,United States,0,Normal business activity
+TXN-00068,2024-06-08 11:00:00,ACC-106,1046.42,Cloud Hosting,United Kingdom,0,Normal business activity
+TXN-00069,2024-06-08 13:30:00,ACC-100,723.18,Travel & Meals,United Kingdom,0,Normal business activity
+TXN-00070,2024-06-08 16:00:00,ACC-100,796.13,Office Equipment,United Kingdom,0,Normal business activity
+TXN-00071,2024-06-08 18:30:00,ACC-103,735.61,Legal & Compliance,United Kingdom,0,Normal business activity
+TXN-00072,2024-06-08 21:00:00,ACC-105,208.37,Software License,United States,0,Normal business activity
+TXN-00073,2024-06-08 23:30:00,ACC-110,799.5,Contractor Payout,France,0,Normal business activity
+TXN-00074,2024-06-09 02:00:00,ACC-106,1171.47,Contractor Payout,United Kingdom,0,Normal business activity
+TXN-00075,2024-06-09 04:30:00,ACC-113,709.27,Software License,United Kingdom,0,Normal business activity
+TXN-00076,2024-06-09 07:00:00,ACC-106,822.94,Software License,United Kingdom,0,Normal business activity
+TXN-00077,2024-06-09 09:30:00,ACC-120,904.49,Office Equipment,United Kingdom,0,Normal business activity
+TXN-00078,2024-06-09 12:00:00,ACC-112,945.76,Cloud Hosting,United States,0,Normal business activity
+TXN-00079,2024-06-09 14:30:00,ACC-108,1353.66,Legal & Compliance,Germany,0,Normal business activity
+TXN-00080,2024-06-09 17:00:00,ACC-111,1120.86,Software License,United Kingdom,0,Normal business activity
+TXN-00081,2024-06-09 19:30:00,ACC-119,612.59,Travel & Meals,United Kingdom,0,Normal business activity
+TXN-00082,2024-06-09 22:00:00,ACC-117,848.1,Contractor Payout,United Kingdom,0,Normal business activity
+TXN-00083,2024-06-10 00:30:00,ACC-110,1006.15,Legal & Compliance,France,0,Normal business activity
+TXN-00084,2024-06-10 03:00:00,ACC-112,995.83,Legal & Compliance,France,0,Normal business activity
+TXN-00085,2024-06-10 05:30:00,ACC-110,1011.14,Legal & Compliance,United States,0,Normal business activity
+TXN-00086,2024-06-10 08:00:00,ACC-102,489.61,Office Equipment,United Kingdom,0,Normal business activity
+TXN-00087,2024-06-10 10:30:00,ACC-112,557.41,Contractor Payout,France,0,Normal business activity
+TXN-00088,2024-06-10 13:00:00,ACC-107,833.9,Contractor Payout,Germany,0,Normal business activity
+TXN-00089,2024-06-10 15:30:00,ACC-100,795.05,Contractor Payout,United Kingdom,0,Normal business activity
+TXN-00090,2024-06-10 18:00:00,ACC-109,614.45,Cloud Hosting,France,0,Normal business activity
+TXN-00091,2024-06-10 20:30:00,ACC-102,963.57,Software License,United Kingdom,0,Normal business activity
+TXN-00092,2024-06-10 23:00:00,ACC-111,950.9,Travel & Meals,United Kingdom,0,Normal business activity
+TXN-00093,2024-06-11 01:30:00,ACC-120,1174.44,Software License,United Kingdom,0,Normal business activity
+TXN-00094,2024-06-11 04:00:00,ACC-119,984.83,Travel & Meals,France,0,Normal business activity
+TXN-00095,2024-06-11 06:30:00,ACC-110,719.06,Legal & Compliance,United Kingdom,0,Normal business activity
+TXN-00096,2024-06-11 09:00:00,ACC-116,1073.91,Travel & Meals,France,0,Normal business activity
+TXN-00097,2024-06-11 11:30:00,ACC-107,311.44,Legal & Compliance,United Kingdom,0,Normal business activity
+TXN-00098,2024-06-11 14:00:00,ACC-110,110.94,Cloud Hosting,United Kingdom,0,Normal business activity
+TXN-00099,2024-06-11 16:30:00,ACC-107,663.64,Legal & Compliance,France,0,Normal business activity
+TXN-00100,2024-06-11 19:00:00,ACC-107,629.13,Contractor Payout,United States,0,Normal business activity
+TXN-00101,2024-06-11 21:30:00,ACC-120,820.02,Software License,United Kingdom,0,Normal business activity
+TXN-00102,2024-06-12 00:00:00,ACC-115,1880.02,Software License,United Kingdom,0,Normal business activity
+TXN-00103,2024-06-12 02:30:00,ACC-106,1199.82,Cloud Hosting,United Kingdom,0,Normal business activity
+TXN-00104,2024-06-12 05:00:00,ACC-105,1246.21,Contractor Payout,Germany,0,Normal business activity
+TXN-00105,2024-06-12 07:30:00,ACC-107,142.21,Contractor Payout,United Kingdom,0,Normal business activity
+TXN-00106,2024-06-12 10:00:00,ACC-113,639.16,Legal & Compliance,United States,0,Normal business activity
+TXN-00107,2024-06-12 12:30:00,ACC-107,1368.55,Travel & Meals,United Kingdom,0,Normal business activity
+TXN-00108,2024-06-12 15:00:00,ACC-119,765.91,Cloud Hosting,United Kingdom,0,Normal business activity
+TXN-00109,2024-06-12 17:30:00,ACC-120,1222.33,Cloud Hosting,United Kingdom,0,Normal business activity
+TXN-00110,2024-06-12 20:00:00,ACC-115,679.78,Software License,United Kingdom,0,Normal business activity
+TXN-00111,2024-06-12 22:30:00,ACC-114,976.56,Travel & Meals,Germany,0,Normal business activity
+TXN-00112,2024-06-13 01:00:00,ACC-119,891.99,Legal & Compliance,United States,0,Normal business activity
+TXN-00113,2024-06-13 03:30:00,ACC-115,203.61,Software License,United States,0,Normal business activity
+TXN-00114,2024-06-13 06:00:00,ACC-113,683.43,Software License,United Kingdom,0,Normal business activity
+TXN-00115,2024-06-13 08:30:00,ACC-105,736.52,Office Equipment,United States,0,Normal business activity
+TXN-00116,2024-06-13 11:00:00,ACC-114,756.78,Office Equipment,United States,0,Normal business activity
+TXN-00117,2024-06-13 13:30:00,ACC-115,1290.05,Software License,United Kingdom,0,Normal business activity
+TXN-00118,2024-06-13 16:00:00,ACC-104,1110.66,Legal & Compliance,United States,0,Normal business activity
+TXN-00119,2024-06-13 18:30:00,ACC-100,1584.36,Software License,Germany,0,Normal business activity
+TXN-00120,2024-06-13 21:00:00,ACC-111,1592.0,Travel & Meals,United States,0,Normal business activity
+TXN-00121,2024-06-13 23:30:00,ACC-111,475.98,Travel & Meals,United States,0,Normal business activity
+TXN-00122,2024-06-14 02:00:00,ACC-109,1506.23,Legal & Compliance,Germany,0,Normal business activity
+TXN-00123,2024-06-14 04:30:00,ACC-103,9999.99,Travel & Meals,Germany,1,Potential smurfing/structuring flag directly beneath reporting threshold
+TXN-00124,2024-06-14 07:00:00,ACC-105,1165.04,Cloud Hosting,United States,0,Normal business activity
+TXN-00125,2024-06-14 09:30:00,ACC-108,445.39,Legal & Compliance,United Kingdom,0,Normal business activity
+TXN-00126,2024-06-14 12:00:00,ACC-111,825.54,Legal & Compliance,United Kingdom,0,Normal business activity
+TXN-00127,2024-06-14 14:30:00,ACC-120,826.54,Travel & Meals,United States,0,Normal business activity
+TXN-00128,2024-06-14 17:00:00,ACC-101,590.3,Office Equipment,France,0,Normal business activity
+TXN-00129,2024-06-14 19:30:00,ACC-100,683.48,Legal & Compliance,France,0,Normal business activity
+TXN-00130,2024-06-14 22:00:00,ACC-114,634.4,Legal & Compliance,United Kingdom,0,Normal business activity
+TXN-00131,2024-06-15 00:30:00,ACC-108,395.31,Cloud Hosting,Germany,0,Normal business activity
+TXN-00132,2024-06-15 03:00:00,ACC-105,606.17,Software License,United Kingdom,0,Normal business activity
+TXN-00133,2024-06-15 05:30:00,ACC-102,1155.45,Legal & Compliance,France,0,Normal business activity
+TXN-00134,2024-06-15 08:00:00,ACC-118,674.2,Software License,Germany,0,Normal business activity
+TXN-00135,2024-06-15 10:30:00,ACC-106,978.38,Travel & Meals,United Kingdom,0,Normal business activity
+TXN-00136,2024-06-15 13:00:00,ACC-109,615.61,Contractor Payout,Germany,0,Normal business activity
+TXN-00137,2024-06-15 15:30:00,ACC-112,791.06,Contractor Payout,United Kingdom,0,Normal business activity
+TXN-00138,2024-06-15 18:00:00,ACC-102,268.11,Software License,France,0,Normal business activity
+TXN-00139,2024-06-15 20:30:00,ACC-118,821.38,Office Equipment,United Kingdom,0,Normal business activity
+TXN-00140,2024-06-15 23:00:00,ACC-112,1088.3,Legal & Compliance,United Kingdom,0,Normal business activity
+TXN-00141,2024-06-16 01:30:00,ACC-100,983.18,Cloud Hosting,United States,0,Normal business activity
+TXN-00142,2024-06-16 04:00:00,ACC-113,851.32,Contractor Payout,United States,0,Normal business activity
+TXN-00143,2024-06-16 06:30:00,ACC-120,652.15,Office Equipment,France,0,Normal business activity
+TXN-00144,2024-06-16 09:00:00,ACC-105,941.66,Legal & Compliance,United Kingdom,0,Normal business activity
+TXN-00145,2024-06-16 11:30:00,ACC-106,680.86,Travel & Meals,United Kingdom,0,Normal business activity
+TXN-00146,2024-06-16 14:00:00,ACC-118,847.22,Cloud Hosting,United Kingdom,0,Normal business activity
+TXN-00147,2024-06-16 16:30:00,ACC-106,1092.26,Software License,France,0,Normal business activity
+TXN-00148,2024-06-16 19:00:00,ACC-108,1388.61,Travel & Meals,United States,0,Normal business activity
+TXN-00149,2024-06-16 21:30:00,ACC-120,992.83,Contractor Payout,United Kingdom,0,Normal business activity
+TXN-00150,2024-06-17 00:00:00,ACC-109,694.73,Software License,United States,0,Normal business activity
+TXN-00151,2024-06-17 02:30:00,ACC-103,595.77,Office Equipment,United Kingdom,0,Normal business activity
+TXN-00152,2024-06-17 05:00:00,ACC-115,1238.87,Travel & Meals,France,0,Normal business activity
+TXN-00153,2024-06-17 07:30:00,ACC-103,762.01,Software License,United Kingdom,0,Normal business activity
+TXN-00154,2024-06-17 10:00:00,ACC-118,1717.87,Software License,United Kingdom,0,Normal business activity
+TXN-00155,2024-06-17 12:30:00,ACC-106,548.86,Contractor Payout,United Kingdom,0,Normal business activity
+TXN-00156,2024-06-17 15:00:00,ACC-108,1148.63,Travel & Meals,United States,0,Normal business activity
+TXN-00157,2024-06-17 17:30:00,ACC-110,575.93,Contractor Payout,United States,0,Normal business activity
+TXN-00158,2024-06-17 20:00:00,ACC-110,1303.29,Office Equipment,United Kingdom,0,Normal business activity
+TXN-00159,2024-06-17 22:30:00,ACC-111,763.21,Legal & Compliance,United States,0,Normal business activity
+TXN-00160,2024-06-18 01:00:00,ACC-111,933.12,Office Equipment,United Kingdom,0,Normal business activity
+TXN-00161,2024-06-18 03:30:00,ACC-100,307.69,Travel & Meals,France,0,Normal business activity
+TXN-00162,2024-06-18 06:00:00,ACC-104,1234.67,Software License,Germany,0,Normal business activity
+TXN-00163,2024-06-18 08:30:00,ACC-103,1406.61,Contractor Payout,United Kingdom,0,Normal business activity
+TXN-00164,2024-06-18 11:00:00,ACC-107,673.24,Office Equipment,United States,0,Normal business activity
+TXN-00165,2024-06-18 13:30:00,ACC-119,1137.91,Legal & Compliance,France,0,Normal business activity
+TXN-00166,2024-06-18 16:00:00,ACC-106,542.84,Software License,France,0,Normal business activity
+TXN-00167,2024-06-18 18:30:00,ACC-110,781.61,Software License,France,0,Normal business activity
+TXN-00168,2024-06-18 21:00:00,ACC-110,932.45,Legal & Compliance,United States,0,Normal business activity
+TXN-00169,2024-06-18 23:30:00,ACC-107,459.76,Contractor Payout,United States,0,Normal business activity
+TXN-00170,2024-06-19 02:00:00,ACC-102,1132.91,Office Equipment,United States,0,Normal business activity
+TXN-00171,2024-06-19 04:30:00,ACC-115,1321.7,Legal & Compliance,France,0,Normal business activity
+TXN-00172,2024-06-19 07:00:00,ACC-109,530.31,Contractor Payout,United Kingdom,0,Normal business activity
+TXN-00173,2024-06-19 09:30:00,ACC-104,970.79,Contractor Payout,Germany,0,Normal business activity
+TXN-00174,2024-06-19 12:00:00,ACC-101,307.43,Cloud Hosting,United States,0,Normal business activity
+TXN-00175,2024-06-19 14:30:00,ACC-102,1883.24,Office Equipment,France,0,Normal business activity
+TXN-00176,2024-06-19 17:00:00,ACC-114,826.01,Cloud Hosting,United States,0,Normal business activity
+TXN-00177,2024-06-19 19:30:00,ACC-103,597.1,Travel & Meals,France,0,Normal business activity
+TXN-00178,2024-06-19 22:00:00,ACC-105,783.93,Legal & Compliance,France,0,Normal business activity
+TXN-00179,2024-06-20 00:30:00,ACC-102,935.17,Software License,United States,0,Normal business activity
+TXN-00180,2024-06-20 03:00:00,ACC-110,846.45,Travel & Meals,United Kingdom,0,Normal business activity
+TXN-00181,2024-06-20 05:30:00,ACC-107,416.03,Legal & Compliance,United Kingdom,0,Normal business activity
+TXN-00182,2024-06-20 08:00:00,ACC-103,106.29,Legal & Compliance,United Kingdom,0,Normal business activity
+TXN-00183,2024-06-20 10:30:00,ACC-117,227.17,Legal & Compliance,France,0,Normal business activity
+TXN-00184,2024-06-20 13:00:00,ACC-110,881.49,Cloud Hosting,Germany,0,Normal business activity
+TXN-00185,2024-06-20 15:30:00,ACC-119,425.22,Software License,France,0,Normal business activity
+TXN-00186,2024-06-20 18:00:00,ACC-112,1490.28,Legal & Compliance,France,0,Normal business activity
+TXN-00187,2024-06-20 20:30:00,ACC-117,878.71,Travel & Meals,United Kingdom,0,Normal business activity
+TXN-00188,2024-06-20 23:00:00,ACC-102,1021.17,Software License,United Kingdom,0,Normal business activity
+TXN-00189,2024-06-21 01:30:00,ACC-110,1383.87,Legal & Compliance,Germany,0,Normal business activity
+TXN-00190,2024-06-21 04:00:00,ACC-103,627.73,Contractor Payout,United Kingdom,0,Normal business activity
+TXN-00191,2024-06-21 06:30:00,ACC-104,832.04,Office Equipment,United States,0,Normal business activity
+TXN-00192,2024-06-21 09:00:00,ACC-101,840.57,Contractor Payout,Germany,0,Normal business activity
+TXN-00193,2024-06-21 11:30:00,ACC-106,708.65,Travel & Meals,United States,0,Normal business activity
+TXN-00194,2024-06-21 14:00:00,ACC-104,1152.14,Contractor Payout,France,0,Normal business activity
+TXN-00195,2024-06-21 16:30:00,ACC-119,887.28,Contractor Payout,United Kingdom,0,Normal business activity
+TXN-00196,2024-06-21 19:00:00,ACC-114,879.52,Office Equipment,United Kingdom,0,Normal business activity
+TXN-00197,2024-06-21 21:30:00,ACC-109,765.81,Cloud Hosting,United States,0,Normal business activity
+TXN-00198,2024-06-22 00:00:00,ACC-109,671.15,Cloud Hosting,France,0,Normal business activity
+TXN-00199,2024-06-22 02:30:00,ACC-101,464.45,Contractor Payout,United Kingdom,0,Normal business activity
+TXN-00200,2024-06-22 05:00:00,ACC-103,1843.97,Office Equipment,France,0,Normal business activity
+TXN-00201,2024-06-22 07:30:00,ACC-118,1044.14,Travel & Meals,France,0,Normal business activity
+TXN-00202,2024-06-22 10:00:00,ACC-112,489.85,Software License,United Kingdom,0,Normal business activity
+TXN-00203,2024-06-22 12:30:00,ACC-104,1322.19,Legal & Compliance,United Kingdom,0,Normal business activity
+TXN-00204,2024-06-22 15:00:00,ACC-107,183.23,Legal & Compliance,France,0,Normal business activity
+TXN-00205,2024-06-22 17:30:00,ACC-101,808.23,Cloud Hosting,United States,0,Normal business activity
+TXN-00206,2024-06-22 20:00:00,ACC-105,557.89,Software License,Germany,0,Normal business activity
+TXN-00207,2024-06-22 22:30:00,ACC-112,383.48,Office Equipment,United States,0,Normal business activity
+TXN-00208,2024-06-23 01:00:00,ACC-112,45.0,Travel & Meals,United Kingdom,0,Normal business activity
+TXN-00209,2024-06-23 03:30:00,ACC-116,689.91,Legal & Compliance,United Kingdom,0,Normal business activity
+TXN-00210,2024-06-23 06:00:00,ACC-117,1626.37,Travel & Meals,United Kingdom,0,Normal business activity
+TXN-00211,2024-06-23 08:30:00,ACC-104,927.68,Office Equipment,Germany,0,Normal business activity
+TXN-00212,2024-06-23 11:00:00,ACC-109,762.83,Travel & Meals,France,0,Normal business activity
+TXN-00213,2024-06-23 13:30:00,ACC-105,474.78,Contractor Payout,United Kingdom,0,Normal business activity
+TXN-00214,2024-06-23 16:00:00,ACC-104,993.45,Cloud Hosting,United Kingdom,0,Normal business activity
+TXN-00215,2024-06-23 18:30:00,ACC-106,32800.5,Legal & Compliance,Seychelles,1,High-risk offshore destination country with anomalous value velocity
+TXN-00216,2024-06-23 21:00:00,ACC-100,950.4,Office Equipment,France,0,Normal business activity
+TXN-00217,2024-06-23 23:30:00,ACC-104,722.47,Travel & Meals,United States,0,Normal business activity
+TXN-00218,2024-06-24 02:00:00,ACC-105,605.73,Software License,United Kingdom,0,Normal business activity
+TXN-00219,2024-06-24 04:30:00,ACC-101,1162.53,Software License,Germany,0,Normal business activity
+TXN-00220,2024-06-24 07:00:00,ACC-120,668.41,Office Equipment,Germany,0,Normal business activity
+TXN-00221,2024-06-24 09:30:00,ACC-112,930.18,Cloud Hosting,United Kingdom,0,Normal business activity
+TXN-00222,2024-06-24 12:00:00,ACC-103,317.18,Cloud Hosting,United States,0,Normal business activity
+TXN-00223,2024-06-24 14:30:00,ACC-105,888.14,Legal & Compliance,France,0,Normal business activity
+TXN-00224,2024-06-24 17:00:00,ACC-112,520.0,Legal & Compliance,France,0,Normal business activity
+TXN-00225,2024-06-24 19:30:00,ACC-120,340.54,Travel & Meals,United Kingdom,0,Normal business activity
+TXN-00226,2024-06-24 22:00:00,ACC-120,731.04,Legal & Compliance,United States,0,Normal business activity
+TXN-00227,2024-06-25 00:30:00,ACC-102,981.03,Software License,United States,0,Normal business activity
+TXN-00228,2024-06-25 03:00:00,ACC-120,922.99,Legal & Compliance,Germany,0,Normal business activity
+TXN-00229,2024-06-25 05:30:00,ACC-118,1309.61,Travel & Meals,United Kingdom,0,Normal business activity
+TXN-00230,2024-06-25 08:00:00,ACC-103,45.0,Contractor Payout,United Kingdom,0,Normal business activity
+TXN-00231,2024-06-25 10:30:00,ACC-113,1892.3,Office Equipment,Germany,0,Normal business activity
+TXN-00232,2024-06-25 13:00:00,ACC-104,1555.94,Software License,United Kingdom,0,Normal business activity
+TXN-00233,2024-06-25 15:30:00,ACC-117,1147.61,Cloud Hosting,United States,0,Normal business activity
+TXN-00234,2024-06-25 18:00:00,ACC-100,1101.82,Travel & Meals,Germany,0,Normal business activity
+TXN-00235,2024-06-25 20:30:00,ACC-116,291.93,Travel & Meals,United Kingdom,0,Normal business activity
+TXN-00236,2024-06-25 23:00:00,ACC-116,710.36,Contractor Payout,Germany,0,Normal business activity
+TXN-00237,2024-06-26 01:30:00,ACC-103,247.56,Cloud Hosting,France,0,Normal business activity
+TXN-00238,2024-06-26 04:00:00,ACC-103,837.8,Cloud Hosting,Germany,0,Normal business activity
+TXN-00239,2024-06-26 06:30:00,ACC-114,815.96,Office Equipment,United Kingdom,0,Normal business activity
+TXN-00240,2024-06-26 09:00:00,ACC-101,906.36,Cloud Hosting,Germany,0,Normal business activity
+TXN-00241,2024-06-26 11:30:00,ACC-117,1049.73,Office Equipment,United Kingdom,0,Normal business activity
+TXN-00242,2024-06-26 14:00:00,ACC-102,576.15,Software License,Germany,0,Normal business activity
+TXN-00243,2024-06-26 16:30:00,ACC-105,1719.16,Travel & Meals,France,0,Normal business activity
+TXN-00244,2024-06-26 19:00:00,ACC-100,1659.78,Cloud Hosting,United Kingdom,0,Normal business activity
+TXN-00245,2024-06-26 21:30:00,ACC-109,1091.71,Legal & Compliance,Germany,0,Normal business activity
+TXN-00246,2024-06-27 00:00:00,ACC-114,547.31,Cloud Hosting,Germany,0,Normal business activity
+TXN-00247,2024-06-27 02:30:00,ACC-111,868.2,Contractor Payout,Germany,0,Normal business activity
+TXN-00248,2024-06-27 05:00:00,ACC-116,1376.54,Cloud Hosting,France,0,Normal business activity
+TXN-00249,2024-06-27 07:30:00,ACC-107,1227.57,Software License,United Kingdom,0,Normal business activity
+TXN-00250,2024-06-27 10:00:00,ACC-104,1308.29,Office Equipment,United Kingdom,0,Normal business activity
+TXN-00251,2024-06-27 12:30:00,ACC-106,724.39,Contractor Payout,United Kingdom,0,Normal business activity
+TXN-00252,2024-06-27 15:00:00,ACC-108,751.08,Cloud Hosting,France,0,Normal business activity
+TXN-00253,2024-06-27 17:30:00,ACC-108,754.37,Office Equipment,United States,0,Normal business activity
+TXN-00254,2024-06-27 20:00:00,ACC-120,39.6,Cloud Hosting,United States,0,Normal business activity
+TXN-00255,2024-06-27 22:30:00,ACC-113,1079.56,Legal & Compliance,United Kingdom,0,Normal business activity
+TXN-00256,2024-06-28 01:00:00,ACC-117,659.62,Cloud Hosting,United Kingdom,0,Normal business activity
+TXN-00257,2024-06-28 03:30:00,ACC-120,648.36,Legal & Compliance,France,0,Normal business activity
+TXN-00258,2024-06-28 06:00:00,ACC-106,384.27,Legal & Compliance,United Kingdom,0,Normal business activity
+TXN-00259,2024-06-28 08:30:00,ACC-116,653.16,Contractor Payout,United Kingdom,0,Normal business activity
+TXN-00260,2024-06-28 11:00:00,ACC-113,1222.79,Cloud Hosting,United Kingdom,0,Normal business activity
+TXN-00261,2024-06-28 13:30:00,ACC-100,832.3,Contractor Payout,United Kingdom,0,Normal business activity
+TXN-00262,2024-06-28 16:00:00,ACC-102,329.1,Office Equipment,United Kingdom,0,Normal business activity
+TXN-00263,2024-06-28 18:30:00,ACC-113,745.64,Software License,United Kingdom,0,Normal business activity
+TXN-00264,2024-06-28 21:00:00,ACC-120,1361.22,Software License,United Kingdom,0,Normal business activity
+TXN-00265,2024-06-28 23:30:00,ACC-104,522.16,Cloud Hosting,United Kingdom,0,Normal business activity
+TXN-00266,2024-06-29 02:00:00,ACC-100,1096.08,Software License,United States,0,Normal business activity
+TXN-00267,2024-06-29 04:30:00,ACC-103,818.1,Software License,United Kingdom,0,Normal business activity
+TXN-00268,2024-06-29 07:00:00,ACC-116,311.65,Legal & Compliance,United Kingdom,0,Normal business activity
+TXN-00269,2024-06-29 09:30:00,ACC-103,513.89,Contractor Payout,United Kingdom,0,Normal business activity
+TXN-00270,2024-06-29 12:00:00,ACC-118,828.91,Office Equipment,Germany,0,Normal business activity
+TXN-00271,2024-06-29 14:30:00,ACC-101,1008.48,Cloud Hosting,United Kingdom,0,Normal business activity
+TXN-00272,2024-06-29 17:00:00,ACC-112,1031.81,Cloud Hosting,United Kingdom,0,Normal business activity
+TXN-00273,2024-06-29 19:30:00,ACC-117,355.6,Contractor Payout,Germany,0,Normal business activity
+TXN-00274,2024-06-29 22:00:00,ACC-112,883.63,Travel & Meals,Germany,0,Normal business activity
+TXN-00275,2024-06-30 00:30:00,ACC-116,884.74,Legal & Compliance,United Kingdom,0,Normal business activity
+TXN-00276,2024-06-30 03:00:00,ACC-104,598.42,Cloud Hosting,United States,0,Normal business activity
+TXN-00277,2024-06-30 05:30:00,ACC-120,736.29,Office Equipment,France,0,Normal business activity
+TXN-00278,2024-06-30 08:00:00,ACC-107,0.01,Legal & Compliance,Germany,1,Micro-transaction card testing pattern (< $0.05)
+TXN-00279,2024-06-30 10:30:00,ACC-113,1268.16,Legal & Compliance,United States,0,Normal business activity
+TXN-00280,2024-06-30 13:00:00,ACC-114,1785.59,Contractor Payout,United Kingdom,0,Normal business activity
+TXN-00281,2024-06-30 15:30:00,ACC-108,1524.73,Travel & Meals,Germany,0,Normal business activity
+TXN-00282,2024-06-30 18:00:00,ACC-107,591.05,Office Equipment,France,0,Normal business activity
+TXN-00283,2024-06-30 20:30:00,ACC-102,937.18,Office Equipment,United States,0,Normal business activity
+TXN-00284,2024-06-30 23:00:00,ACC-120,179.52,Software License,United Kingdom,0,Normal business activity
+TXN-00285,2024-07-01 01:30:00,ACC-107,719.02,Software License,United Kingdom,0,Normal business activity
+TXN-00286,2024-07-01 04:00:00,ACC-109,782.94,Contractor Payout,United States,0,Normal business activity
+TXN-00287,2024-07-01 06:30:00,ACC-100,283.82,Travel & Meals,France,0,Normal business activity
+TXN-00288,2024-07-01 09:00:00,ACC-115,819.08,Travel & Meals,Germany,0,Normal business activity
+TXN-00289,2024-07-01 11:30:00,ACC-117,448.53,Legal & Compliance,United Kingdom,0,Normal business activity
+TXN-00290,2024-07-01 14:00:00,ACC-100,1121.1,Legal & Compliance,United States,0,Normal business activity
+TXN-00291,2024-07-01 16:30:00,ACC-117,870.81,Legal & Compliance,United Kingdom,0,Normal business activity
+TXN-00292,2024-07-01 19:00:00,ACC-116,1423.27,Legal & Compliance,Germany,0,Normal business activity
+TXN-00293,2024-07-01 21:30:00,ACC-101,1361.52,Contractor Payout,United States,0,Normal business activity
+TXN-00294,2024-07-02 00:00:00,ACC-116,734.47,Cloud Hosting,United Kingdom,0,Normal business activity
+TXN-00295,2024-07-02 02:30:00,ACC-102,45.0,Office Equipment,United Kingdom,0,Normal business activity
+TXN-00296,2024-07-02 05:00:00,ACC-113,775.81,Travel & Meals,United States,0,Normal business activity
+TXN-00297,2024-07-02 07:30:00,ACC-105,572.99,Office Equipment,United Kingdom,0,Normal business activity
+TXN-00298,2024-07-02 10:00:00,ACC-117,1299.12,Software License,United Kingdom,0,Normal business activity
+TXN-00299,2024-07-02 12:30:00,ACC-109,847.83,Travel & Meals,United Kingdom,0,Normal business activity
+TXN-00300,2024-07-02 15:00:00,ACC-120,873.31,Contractor Payout,United States,0,Normal business activity

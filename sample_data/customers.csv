@@ -1,0 +1,101 @@
+customer_id,customer_name,segment,country,city,sign_up_date,lifetime_value,churn_risk
+CUST-0001,David Brown,Consumer,Germany,Munich,2022-08-17,5314.06,Low
+CUST-0002,Emily Moore,Consumer,Canada,Calgary,2022-02-02,1528.0,Low
+CUST-0003,Isabella Taylor,Small Business,United Kingdom,Bristol,2022-07-23,25202.68,High
+CUST-0004,Evelyn Wilson,Consumer,France,Nice,2022-10-12,28425.35,Low
+CUST-0005,Matthew Garcia,Small Business,France,Marseille,2022-10-12,5864.04,Medium
+CUST-0006,Sophia Williams,Corporate,United Kingdom,Birmingham,2022-12-19,21328.55,Low
+CUST-0007,Elizabeth Anderson,Small Business,United Kingdom,Edinburgh,2022-03-22,19545.4,High
+CUST-0008,Abigail Lopez,Small Business,United States,New York,2022-02-16,23313.58,Medium
+CUST-0009,Oliver Davis,Consumer,France,Marseille,2023-04-10,22431.11,Medium
+CUST-0010,Ava Lopez,Corporate,United States,Austin,2022-03-15,21515.02,Low
+CUST-0011,Evelyn Davis,Consumer,France,Toulouse,2022-10-04,34638.56,High
+CUST-0012,Daniel Moore,Consumer,Germany,Berlin,2022-08-23,28852.19,Medium
+CUST-0013,Benjamin Rodriguez,Consumer,United States,Seattle,2022-11-19,7835.62,Medium
+CUST-0014,Benjamin Anderson,Consumer,Germany,Munich,2022-09-10,26202.12,High
+CUST-0015,William Jackson,Corporate,Canada,Calgary,2023-01-06,8066.57,Low
+CUST-0016,Alexander Thomas,Consumer,United Kingdom,London,2022-06-06,22146.89,High
+CUST-0017,Amelia Martin,Consumer,France,Toulouse,2023-04-25,18754.44,High
+CUST-0018,Avery Smith,Small Business,United Kingdom,Bristol,2022-10-01,27016.66,Medium
+CUST-0019,Sophia Martinez,Corporate,United States,Chicago,2022-01-04,33406.65,High
+CUST-0020,William Taylor,Consumer,Canada,Toronto,2022-11-02,29537.59,High
+CUST-0021,Abigail Miller,Consumer,Germany,Munich,2023-07-07,33395.74,High
+CUST-0022,Ella Smith,Small Business,Germany,Hamburg,2022-01-20,4359.44,Medium
+CUST-0023,Joseph Martinez,Consumer,United Kingdom,Manchester,2023-08-04,33169.76,Low
+CUST-0024,Elizabeth Thomas,Consumer,Canada,Vancouver,2022-05-12,23261.4,High
+CUST-0025,Ava Rodriguez,Small Business,Canada,Calgary,2022-08-05,32547.52,High
+CUST-0026,Daniel Miller,Small Business,Germany,Hamburg,2023-01-18,15614.45,High
+CUST-0027,Henry Brown,Consumer,United States,New York,2022-12-13,1225.68,High
+CUST-0028,Isabella Jackson,Consumer,United Kingdom,London,2022-03-02,8398.49,Low
+CUST-0029,Avery Hernandez,Consumer,Canada,Vancouver,2022-10-13,23579.73,Low
+CUST-0030,Evelyn Jones,Small Business,Canada,Ottawa,2023-04-30,8883.4,Medium
+CUST-0031,Sofia Wilson,Consumer,United Kingdom,London,2023-03-18,12723.27,Medium
+CUST-0032,Henry Johnson,Small Business,United Kingdom,London,2023-02-17,25623.37,Low
+CUST-0033,Isabella Miller,Consumer,Canada,Calgary,2022-05-24,15054.92,Medium
+CUST-0034,Henry Davis,Consumer,France,Nice,2022-04-11,2245.3,High
+CUST-0035,Aiden Smith,Consumer,United States,San Francisco,2023-02-21,17254.62,Low
+CUST-0036,Avery Gonzalez,Consumer,United States,Chicago,2022-01-03,34493.16,Medium
+CUST-0037,Ella Anderson,Corporate,France,Nice,2023-05-14,5840.49,Medium
+CUST-0038,Noah Johnson,Small Business,Canada,Toronto,2022-11-18,2472.2,High
+CUST-0039,Harper Taylor,Small Business,United States,New York,2023-06-05,3263.85,Low
+CUST-0040,Oliver Martin,Consumer,United States,Chicago,2022-05-03,32985.07,High
+CUST-0041,Isabella Jackson,Small Business,United Kingdom,Bristol,2022-03-25,14963.26,High
+CUST-0042,Michael Taylor,Corporate,Germany,Munich,2022-11-18,8734.67,Medium
+CUST-0043,Liam Martinez,Corporate,Germany,Berlin,2022-01-10,16310.85,High
+CUST-0044,Sophia Williams,Small Business,United States,Seattle,2022-09-29,5069.75,Medium
+CUST-0045,Joseph Williams,Consumer,Germany,Frankfurt,2022-06-11,15617.37,High
+CUST-0046,Daniel Martinez,Small Business,Canada,Toronto,2023-07-22,10828.57,High
+CUST-0047,Sophia Jones,Corporate,United Kingdom,London,2023-07-21,5862.95,Medium
+CUST-0048,Abigail Miller,Small Business,Germany,Munich,2022-09-28,17936.61,Medium
+CUST-0049,Joseph Johnson,Consumer,France,Marseille,2022-02-15,622.33,Low
+CUST-0050,David Rodriguez,Consumer,France,Nice,2023-03-14,19851.29,Low
+CUST-0051,Oliver Jones,Small Business,United Kingdom,Birmingham,2023-08-20,19562.12,Medium
+CUST-0052,Liam Johnson,Corporate,Germany,Berlin,2023-01-02,7747.64,Low
+CUST-0053,Emily Brown,Corporate,Canada,Calgary,2022-06-08,32438.85,Low
+CUST-0054,Avery Garcia,Consumer,France,Paris,2022-07-03,25911.47,Medium
+CUST-0055,Sofia Wilson,Small Business,United States,Austin,2022-06-13,27664.42,Low
+CUST-0056,Benjamin Johnson,Corporate,United States,San Francisco,2023-04-17,12563.22,Low
+CUST-0057,Isabella Smith,Small Business,United States,Chicago,2022-12-03,10111.81,Low
+CUST-0058,Matthew Rodriguez,Corporate,Canada,Calgary,2023-07-04,11924.67,Low
+CUST-0059,Sophia Rodriguez,Consumer,Canada,Montreal,2022-02-09,4239.89,Medium
+CUST-0060,Charlotte Hernandez,Corporate,Canada,Ottawa,2022-04-29,13789.24,High
+CUST-0061,Noah Rodriguez,Consumer,France,Paris,2023-06-17,32432.34,High
+CUST-0062,Emily Miller,Corporate,France,Paris,2022-12-05,21998.86,High
+CUST-0063,Avery Brown,Small Business,Germany,Stuttgart,2022-11-13,23507.81,Medium
+CUST-0064,Benjamin Martinez,Small Business,United States,San Francisco,2023-03-07,23440.07,Medium
+CUST-0065,Emily Garcia,Small Business,Canada,Montreal,2023-02-20,19403.83,Low
+CUST-0066,Mia Martinez,Consumer,France,Nice,2022-11-26,16542.09,Medium
+CUST-0067,Emily Miller,Small Business,France,Lyon,2022-03-28,10290.63,High
+CUST-0068,David Martin,Corporate,United Kingdom,Manchester,2022-11-14,8250.1,Low
+CUST-0069,Liam Smith,Consumer,United States,Chicago,2022-03-16,16211.86,High
+CUST-0070,Michael Miller,Small Business,France,Toulouse,2023-02-14,8917.46,High
+CUST-0071,Daniel Smith,Consumer,France,Lyon,2022-06-30,28241.79,High
+CUST-0072,Alexander Anderson,Consumer,Canada,Vancouver,2022-05-05,16247.93,Medium
+CUST-0073,Emily Taylor,Small Business,Canada,Montreal,2023-03-30,21636.51,High
+CUST-0074,Joseph Taylor,Corporate,Canada,Calgary,2022-06-12,26156.11,Medium
+CUST-0075,Henry Rodriguez,Consumer,Germany,Stuttgart,2023-05-12,22122.82,Medium
+CUST-0076,Henry Williams,Small Business,Germany,Munich,2022-10-06,12086.74,High
+CUST-0077,Oliver Jones,Consumer,United States,Chicago,2022-06-06,24871.46,Low
+CUST-0078,Amelia Wilson,Corporate,Canada,Calgary,2023-03-02,2648.17,Medium
+CUST-0079,Benjamin Jackson,Small Business,United Kingdom,Bristol,2023-01-25,16955.8,Medium
+CUST-0080,Mia Gonzalez,Corporate,Canada,Ottawa,2022-08-14,17343.92,Medium
+CUST-0081,Amelia Thomas,Consumer,France,Marseille,2023-02-19,25484.26,Medium
+CUST-0082,Ella Jones,Small Business,Canada,Toronto,2023-02-08,20920.3,High
+CUST-0083,James Williams,Small Business,France,Lyon,2023-04-18,6769.65,Medium
+CUST-0084,Benjamin Hernandez,Consumer,France,Marseille,2022-12-12,26762.42,Medium
+CUST-0085,William Wilson,Corporate,United Kingdom,Edinburgh,2022-01-20,26341.34,Low
+CUST-0086,Charlotte Davis,Small Business,United Kingdom,London,2022-02-01,33261.6,Low
+CUST-0087,Aiden Smith,Small Business,United States,San Francisco,2022-05-10,16837.86,Low
+CUST-0088,Michael Miller,Corporate,Germany,Frankfurt,2022-06-21,21403.3,High
+CUST-0089,Daniel Brown,Consumer,Germany,Berlin,2023-08-16,1385.91,Medium
+CUST-0090,Michael Gonzalez,Corporate,United States,New York,2022-09-06,4015.6,Medium
+CUST-0091,Avery Martin,Consumer,Canada,Toronto,2022-12-22,18879.71,High
+CUST-0092,Charlotte Williams,Small Business,Germany,Berlin,2023-03-07,28870.42,Low
+CUST-0093,Amelia Lopez,Small Business,France,Lyon,2023-03-22,6576.73,High
+CUST-0094,David Rodriguez,Small Business,Canada,Calgary,2023-04-22,15527.32,High
+CUST-0095,Michael Rodriguez,Corporate,United States,New York,2022-10-13,30916.28,Low
+CUST-0096,Matthew Anderson,Small Business,Canada,Calgary,2022-12-11,1490.15,Medium
+CUST-0097,Ava Thomas,Consumer,Germany,Frankfurt,2022-12-15,10148.22,High
+CUST-0098,Daniel Rodriguez,Small Business,United Kingdom,Bristol,2022-07-15,3453.65,High
+CUST-0099,Amelia Thomas,Small Business,United States,Chicago,2023-05-18,15962.02,Low
+CUST-0100,Oliver Martinez,Consumer,France,Lyon,2022-11-10,23406.62,Medium

@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  datamind-ai:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: datamind_ai_analyst
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=False
+      - DEFAULT_LLM_PROVIDER=auto
+      # Optional: Provide API keys if you wish to use external LLMs
+      # - OPENAI_API_KEY=${OPENAI_API_KEY}
+      # - GEMINI_API_KEY=${GEMINI_API_KEY}
+      # - GROQ_API_KEY=${GROQ_API_KEY}
+    restart: unless-stopped
+    volumes:
+      - ./sample_data:/app/sample_data:ro

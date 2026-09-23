@@ -1,0 +1,11 @@
+campaign_id,campaign_name,channel,spend,impressions,clicks,conversions,revenue_generated,roi
+CMP-01,Q1 New Year Growth,Google Ads,15000,450000,18500,920,78500,4.23
+CMP-02,B2B Enterprise Lead Gen,LinkedIn,28000,195000,6800,480,145000,4.18
+CMP-03,Spring Retail Flash,Meta,12500,520000,24000,1150,62000,3.96
+CMP-04,Customer Retention Nurture,Email,3200,85000,14200,1890,84000,25.25
+CMP-05,Summer Tech Expo Promo,Google Ads,22000,610000,29000,1410,112000,4.09
+CMP-06,SaaS Thought Leadership,LinkedIn,18500,140000,5100,310,96000,4.19
+CMP-07,Black Friday Mega Sale,Meta,35000,1200000,65000,3800,245000,6.0
+CMP-08,Executive Whitepaper Campaign,LinkedIn,14000,110000,4200,290,72000,4.14
+CMP-09,Organic SEO & Pillar Pages,Organic,4500,320000,38000,2100,165000,35.67
+CMP-10,End-of-Year Tech Refresh,Google Ads,26000,740000,34000,1720,138000,4.31

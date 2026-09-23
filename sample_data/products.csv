@@ -1,0 +1,16 @@
+product_id,product_name,category,sub_category,unit_cost,retail_price
+PROD-001,Cloud Server License,Technology,Software,450.0,899.0
+PROD-002,AI Copilot Subscription,Technology,Software,120.0,349.0
+PROD-003,"UltraWide Monitor 34""",Technology,Hardware,210.0,499.0
+PROD-004,Wireless Noise-Cancelling Headset,Technology,Accessories,65.0,189.0
+PROD-005,Ergonomic Smart Keyboard,Technology,Accessories,40.0,129.0
+PROD-006,Premium Executive Chair,Office Supplies,Furniture,180.0,420.0
+PROD-007,Motorized Standing Desk,Office Supplies,Furniture,290.0,650.0
+PROD-008,Acoustic Privacy Panel,Office Supplies,Office Decor,45.0,110.0
+PROD-009,High-Speed Laser Printer,Office Supplies,Hardware,190.0,380.0
+PROD-010,Eco Toner Multipack,Office Supplies,Supplies,25.0,75.0
+PROD-011,Cybersecurity Audit Package,Enterprise Services,Consulting,1200.0,3500.0
+PROD-012,Cloud Migration Sprint,Enterprise Services,Consulting,2000.0,5800.0
+PROD-013,Data Pipeline Architecture Setup,Enterprise Services,Engineering,1500.0,4200.0
+PROD-014,24/7 SLA Support Tier 1,Enterprise Services,Support,300.0,850.0
+PROD-015,Database Optimization Review,Enterprise Services,Engineering,700.0,1950.0
