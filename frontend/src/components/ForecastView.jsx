@@ -106,21 +106,34 @@ export default function ForecastView() {
       {results && (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
           {/* Insight Banner */}
-          <div style={{ background: 'rgba(16, 185, 129, 0.1)', border: '1px solid #059669', borderRadius: '8px', padding: '16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-            <div>
-              <div style={{ fontSize: '14px', fontWeight: 700, color: '#34d399', marginBottom: '4px' }}>
-                {results.trend_direction} Trajectory ({results.projected_growth_pct >= 0 ? '+' : ''}{results.projected_growth_pct}%)
+          {(() => {
+            const isUpward = results.trend_direction === 'Upward';
+            const isDownward = results.trend_direction === 'Downward';
+            const badgeColor = isUpward ? '#34d399' : (isDownward ? '#f87171' : '#60a5fa');
+            const borderColor = isUpward ? '#059669' : (isDownward ? '#dc2626' : '#2563eb');
+            const bgColor = isUpward ? 'rgba(16, 185, 129, 0.1)' : (isDownward ? 'rgba(239, 68, 68, 0.1)' : 'rgba(59, 130, 246, 0.1)');
+
+            return (
+              <div style={{ background: bgColor, border: `1px solid ${borderColor}`, borderRadius: '8px', padding: '16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                <div>
+                  <div style={{ fontSize: '14px', fontWeight: 700, color: badgeColor, marginBottom: '4px' }}>
+                    {results.trend_direction} Trajectory ({results.projected_growth_pct >= 0 ? '+' : ''}{results.projected_growth_pct}%)
+                    {results.is_capped ? ' (Clamped)' : ''}
+                  </div>
+                  <div style={{ fontSize: '12px', color: '#d1d5db' }}>
+                    {results.summary_insight}
+                  </div>
+                </div>
+                {isUpward ? (
+                  <ArrowUpRight size={32} color="#10b981" />
+                ) : isDownward ? (
+                  <ArrowDownRight size={32} color="#ef4444" />
+                ) : (
+                  <TrendingUp size={32} color="#60a5fa" />
+                )}
               </div>
-              <div style={{ fontSize: '12px', color: '#d1d5db' }}>
-                {results.summary_insight}
-              </div>
-            </div>
-            {results.trend_direction === 'Upward' ? (
-              <ArrowUpRight size={32} color="#10b981" />
-            ) : (
-              <ArrowDownRight size={32} color="#ef4444" />
-            )}
-          </div>
+            );
+          })()}
 
           {/* Chart */}
           <div style={{ background: '#111827', border: '1px solid #374151', borderRadius: '10px', padding: '20px' }}>

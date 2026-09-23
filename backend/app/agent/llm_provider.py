@@ -82,6 +82,107 @@ class LLMProvider:
         last_turn = history[-1] if history else None
         last_sql = last_turn.get("sql_query") if last_turn else None
 
+        # Graceful handling for vague / ambiguous / unparseable queries
+        def is_vague_or_ambiguous(q_str: str) -> bool:
+            cleaned = re.sub(r'[^\w\s]', '', q_str).strip().lower()
+            words = cleaned.split()
+
+            # Specific entity IDs (e.g. ORD-00042, CUST-0088, PROD-010) are not vague
+            if re.search(r'\b(ord|cust|prod|txn|acc)[-_]?\d+\b', q_str.lower()):
+                return False
+
+            vague_exact = {
+                "hello", "hi", "hey", "greetings", "good morning", "good afternoon",
+                "test", "testing", "ping", "help", "who are you", "what can you do",
+                "asdf", "asdfgh", "asdfghjk", "qwerty", "data", "dataset", "table", "tables",
+                "csv", "sales", "orders", "customers", "products", "revenue", "profit",
+                "why", "what", "how", "where", "ok", "okay", "yes", "no", "please",
+                "analyze", "insights", "summary", "stats", "query"
+            }
+
+            if q_str.strip() in ["?", "??", "???", "!", "...", ".", "", "help", "info"]:
+                return True
+
+            if cleaned in vague_exact:
+                return True
+
+            if len(words) <= 1:
+                return True
+
+            if len(words) == 2 and words[0] in ["hi", "hello", "hey", "what", "show", "tell", "can", "is", "why", "how"]:
+                if words[1] in ["there", "you", "me", "data", "table", "it", "is", "are", "this", "that", "up", "now"]:
+                    return True
+
+            # Gibberish: string of letters with no vowels
+            if len(cleaned) > 3 and not any(v in cleaned for v in "aeiouy") and not cleaned.isdigit():
+                return True
+
+            return False
+
+        if is_vague_or_ambiguous(q):
+            loaded_tables = data_store.get_tables()
+            tbl_summary = ", ".join([f"`{t}` ({data_store.get_metadata(t)['row_count']:,} rows)" for t in loaded_tables]) if loaded_tables else "no datasets loaded yet"
+            return {
+                "action": "clarify",
+                "thought": [
+                    f"User input '{question}' was detected as brief, conversational, or underspecified.",
+                    "Gracefully avoided executing speculative SQL aggregation to prevent misleading output.",
+                    f"Identified available in-memory tables: {', '.join(loaded_tables)}.",
+                    "Formulated targeted clarifying questions with schema-aligned prompt recommendations."
+                ],
+                "response_text": (
+                    f"I noticed your request (*\"{question}\"*) is brief or ambiguous. "
+                    f"I currently have access to indexed dataset(s): {tbl_summary}. "
+                    "To give you an exact analysis, could you please specify what metrics, dimensions, or cohorts you would like to explore? "
+                    "You can also click any of the suggested prompts below to analyze right away."
+                ),
+                "insights": [
+                    "💡 **Suggested query**: \"Which region generated the highest revenue?\"",
+                    "💡 **Suggested query**: \"Show monthly sales trends.\"",
+                    "💡 **Suggested query**: \"What are the top five customers?\"",
+                    "💡 **Suggested query**: \"Detect anomalies in the dataset.\""
+                ],
+                "suggested_questions": [
+                    "Which region generated the highest revenue?",
+                    "Show monthly sales trends.",
+                    "What are the top five customers?",
+                    "Detect anomalies in the dataset."
+                ],
+                "sql": None,
+                "chart": None,
+                "type": "clarification"
+            }
+
+        # Entity lookup branch (e.g. ORD-00042, CUST-0088, PROD-010)
+        match_id = re.search(r'\b(ord|cust|prod|txn)[-_]?(\d+)\b', q)
+        if match_id:
+            prefix, num = match_id.group(1).upper(), match_id.group(2)
+            if prefix == "ORD":
+                full_id = f"ORD-{int(num):05d}"
+                tbl = "sales_data"
+                id_col = "order_id"
+            elif prefix == "CUST":
+                full_id = f"CUST-{int(num):04d}"
+                tbl = "customers" if "customers" in tables else "sales_data"
+                id_col = "customer_id"
+            elif prefix == "PROD":
+                full_id = f"PROD-{int(num):03d}"
+                tbl = "products" if "products" in tables else "sales_data"
+                id_col = "product_id"
+            else:
+                full_id = f"TXN-{int(num):05d}"
+                tbl = "financial_anomalies" if "financial_anomalies" in tables else "sales_data"
+                id_col = "transaction_id"
+
+            sql = f"SELECT * FROM {tbl} WHERE {id_col} = '{full_id}' OR {id_col} LIKE '%{num}%' LIMIT 1;"
+            thought = [
+                f"Detected specific entity lookup request for identifier '{full_id}'.",
+                f"Located table '{tbl}' with primary key '{id_col}'.",
+                f"Constructed filtered DuckDB query targeting record '{full_id}'.",
+                "Prepared contextual entity profile and anomaly assessment."
+            ]
+            return {"sql": sql, "thought": thought, "chart": None, "type": "entity_lookup", "entity_id": full_id}
+
         # 1. Regional revenue query
         if "region" in q and ("highest" in q or "revenue" in q or "sales" in q or "compare" in q):
             tbl = pick_table_with_columns(["region", "revenue"], "sales_data")

@@ -39,6 +39,8 @@ class ChatResponse(BaseModel):
     insights: List[str]
     execution_time_ms: float
     tool_calls: List[Dict[str, Any]] = []
+    action: Optional[str] = None
+    suggested_questions: Optional[List[str]] = []
 
 class QuerySQLRequest(BaseModel):
     sql: str

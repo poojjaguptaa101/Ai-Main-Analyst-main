@@ -78,3 +78,28 @@ def test_html_report_export():
     assert resp.status_code == 200
     assert "text/html" in resp.headers["content-type"]
     assert "DataMind AI" in resp.text
+
+def test_vague_query_clarification():
+    # Single-word / greeting query
+    resp = client.post("/api/chat", json={
+        "session_id": "pytest_session",
+        "message": "hello"
+    })
+    assert resp.status_code == 200
+    data = resp.json()
+    assert "clarify" in str(data.get("action", "")).lower() or len(data.get("suggested_questions", [])) > 0
+    assert len(data.get("suggested_questions", [])) >= 3
+
+def test_entity_lookup_narrative():
+    # Specific order ID query
+    resp = client.post("/api/chat", json={
+        "session_id": "pytest_session",
+        "message": "Tell me about order ORD-00042"
+    })
+    assert resp.status_code == 200
+    data = resp.json()
+    text = data.get("response", "")
+    assert "ORD-00042" in text
+    # Should contain business narrative (e.g. units, bulk, revenue, or average)
+    assert len(text.split(".")) >= 2
+

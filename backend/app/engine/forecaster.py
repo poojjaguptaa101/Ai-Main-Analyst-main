@@ -35,6 +35,10 @@ class Forecaster:
         ts = temp_df.set_index(date_column)[value_column].resample(pandas_freq).sum()
         ts = ts.ffill().fillna(0)
 
+        # Drop trailing incomplete partial period if present
+        if len(ts) >= 4 and ts.iloc[-1] < (ts.iloc[:-1].mean() * 0.15):
+            ts = ts.iloc[:-1]
+
         if len(ts) < 3:
             raise ValueError("Aggregated time-series has fewer than 3 historical periods.")
 
@@ -42,7 +46,7 @@ class Forecaster:
         n = len(y)
         x = np.arange(n)
 
-        # Fit linear + exponential trend
+        # Fit linear trend
         poly = np.polyfit(x, y, 1)
         slope, intercept = poly[0], poly[1]
 
@@ -70,11 +74,10 @@ class Forecaster:
 
         forecast_points = []
         last_smooth = smoothed[-1]
-        growth_rate = (y[-1] - y[0]) / max(len(y), 1)
 
         for i, f_date in enumerate(future_dates):
             t_future = n + i
-            projected = max(0.0, float(last_smooth + (i + 1) * growth_rate))
+            projected = max(0.0, float(last_smooth + (i + 1) * slope))
             uncertainty_band = 1.96 * std_error * np.sqrt(1 + (i + 1) * 0.15)
             
             upper_bound = round(projected + uncertainty_band, 2)
@@ -87,8 +90,41 @@ class Forecaster:
                 "lower_bound": lower_bound
             })
 
-        # Summary statistics
-        growth_pct = round(((forecast_points[-1]["forecast"] - y[-1]) / y[-1] * 100), 2) if y[-1] > 0 else 0.0
+        # Summary statistics - recompute as (forecast_end_value - last_actual_value) / last_actual_value * 100
+        last_actual = float(y[-1])
+        forecast_end = float(forecast_points[-1]["forecast"])
+
+        if last_actual > 0:
+            raw_pct = ((forecast_end - last_actual) / last_actual) * 100
+        else:
+            hist_mean = float(np.mean(y)) if np.mean(y) > 0 else 1.0
+            raw_pct = ((forecast_end - hist_mean) / hist_mean) * 100
+
+        # Sanity check / clamp unrealistic outputs (cap between -90% and +200%)
+        is_capped = False
+        if raw_pct > 200.0:
+            growth_pct = 200.0
+            is_capped = True
+        elif raw_pct < -90.0:
+            growth_pct = -90.0
+            is_capped = True
+        else:
+            growth_pct = round(raw_pct, 2)
+
+        # Strictly align trend direction with growth_pct
+        if growth_pct > 0.05:
+            trend_direction = "Upward"
+        elif growth_pct < -0.05:
+            trend_direction = "Downward"
+        else:
+            trend_direction = "Stable"
+
+        if trend_direction == "Upward":
+            summary_insight = f"Based on historical momentum, '{value_column}' is projected to trend upward by +{growth_pct}% over the next {horizon} {aggregation}s (from {last_actual:,.2f} to {forecast_end:,.2f})."
+        elif trend_direction == "Downward":
+            summary_insight = f"Based on historical momentum, '{value_column}' is projected to trend downward by {abs(growth_pct)}% over the next {horizon} {aggregation}s (from {last_actual:,.2f} to {forecast_end:,.2f})."
+        else:
+            summary_insight = f"Based on historical momentum, '{value_column}' is projected to remain stable over the next {horizon} {aggregation}s (projected at {forecast_end:,.2f})."
 
         return {
             "table_name": table_name,
@@ -98,9 +134,10 @@ class Forecaster:
             "horizon_periods": horizon,
             "historical_points": historical_points,
             "forecast_points": forecast_points,
-            "trend_direction": "Upward" if slope > 0 else "Downward",
+            "trend_direction": trend_direction,
             "projected_growth_pct": growth_pct,
-            "summary_insight": f"Based on historical velocity, '{value_column}' is trending {('upwards by ' + str(growth_pct) + '%') if growth_pct >= 0 else ('downwards by ' + str(abs(growth_pct)) + '%')} over the next {horizon} {aggregation}s."
+            "is_capped": is_capped,
+            "summary_insight": summary_insight
         }
 
 forecaster = Forecaster()

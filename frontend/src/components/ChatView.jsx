@@ -60,7 +60,8 @@ export default function ChatView({ apiKey, provider }) {
         chart_spec: res.chart_spec,
         data_table: res.data_table,
         insights: res.insights,
-        execution_time_ms: res.execution_time_ms
+        execution_time_ms: res.execution_time_ms,
+        suggested_questions: res.suggested_questions
       };
       setMessages(prev => [...prev, assistantMsg]);
       // Auto open thought for latest
@@ -263,6 +264,33 @@ export default function ChatView({ apiKey, provider }) {
                       <div key={i} style={{ fontSize: '11px', color: '#e5e7eb', marginBottom: '4px', lineHeight: 1.5 }}>
                         • {ins}
                       </div>
+                    ))}
+                  </div>
+                )}
+
+                {/* Suggested Questions Pills for Ambiguous / Vague Queries */}
+                {!isUser && msg.suggested_questions && msg.suggested_questions.length > 0 && (
+                  <div style={{ marginTop: '12px', display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+                    {msg.suggested_questions.map((sq, i) => (
+                      <button
+                        key={i}
+                        onClick={() => handleSend(sq)}
+                        style={{
+                          background: 'rgba(59, 130, 246, 0.12)',
+                          border: '1px solid #3b82f6',
+                          color: '#93c5fd',
+                          borderRadius: '16px',
+                          padding: '6px 12px',
+                          fontSize: '11px',
+                          cursor: 'pointer',
+                          transition: 'all 0.15s ease',
+                          textAlign: 'left'
+                        }}
+                        onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(59, 130, 246, 0.25)'; }}
+                        onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(59, 130, 246, 0.12)'; }}
+                      >
+                        💡 {sq}
+                      </button>
                     ))}
                   </div>
                 )}

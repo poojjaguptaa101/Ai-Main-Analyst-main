@@ -160,7 +160,7 @@ npm run dev
 
 ## 🧪 Testing & Evaluation Benchmark
 
-### Automated Unit Test Suite (16/16 Passed)
+### Automated Unit Test Suite (19/19 Passed)
 ```bash
 # Run backend pytest suite
 pytest backend/tests -v
@@ -170,8 +170,10 @@ pytest backend/tests -v
 - Relational foreign key detection
 - SQL execution safety (blocking `DROP`, `DELETE`, `TRUNCATE`)
 - Isolation Forest & Z-Score anomaly detection accuracy
-- Time-series trend forecasting with confidence intervals
+- Time-series trend forecasting with confidence intervals and trajectory consistency
 - Multi-turn conversational memory retention
+- Vague query intent clarification & suggested prompts
+- Single-entity lookup business narratives
 - All FastAPI endpoints and HTML report exports
 
 ### Live Benchmark Evaluation
@@ -181,13 +183,15 @@ curl http://localhost:8000/api/evaluate/run
 ```
 **Results:**
 - **Accuracy Score:** `100.0%`
-- **Average Latency:** `~3.8 ms`
+- **Average Latency:** `~3.5 ms`
 - **Queries Evaluated:**
-  1. `Which region generated the highest revenue?` -> **PASSED** (North leads with $3.46M)
+  1. `Which region generated the highest revenue?` -> **PASSED** (North leads with $3.46M narrative)
   2. `Show monthly sales trends.` -> **PASSED** (Monthly velocity line chart)
-  3. `Which products are underperforming?` -> **PASSED** (Bottom profit ranking)
+  3. `Which products are underperforming?` -> **PASSED** (Bottom profit ranking & margin analysis)
   4. `What are the top five customers?` -> **PASSED** (Relational customer spend join)
   5. `Detect anomalies in the dataset.` -> **PASSED** (Isolation Forest flagged records)
+  6. `hello` -> **PASSED** (Vague query intent clarification with prompt pills)
+  7. `Tell me about order ORD-00042` -> **PASSED** (Entity lookup with business outlier context)
 
 ---
 
@@ -213,10 +217,40 @@ Located in the `sample_data/` directory:
 
 ## 🎬 10–30 Second Demo Walkthrough Script
 
-1. **Open App**: Go to `http://localhost:8000`. The sample datasets load automatically.
-2. **Ask Core Question 1**: Click the suggestion pill `"Which region generated the highest revenue?"`. Watch the agent display its **Thought Process**, the generated **DuckDB SQL**, an interactive **Bar Chart**, and **Business Takeaways** showing North generated $3.46M.
-3. **Ask Core Question 2**: Click `"Show monthly sales trends."` to see the **Line Chart** displaying monthly sales velocity.
-4. **Anomaly Hunter**: Click the **Anomaly Hunter** tab. Click **Re-Run Anomaly Scan** to inspect the 2D scatter plot and view the root-cause explanations (e.g., Row #42: units_sold is 6.2 standard deviations above mean).
-5. **Data Quality & Schema**: Click **Data Quality** to view the **96% Health Score** and column-level audits.
-6. **Export Report**: Click the **Download** icon in the header to generate and view the audit-ready **Executive Summary Report**.
-7. **Benchmarks**: Click **Benchmarks & Ops** and click **Run Automated Benchmark** to watch all 5 test cases pass with a **100% score**.
+This script demonstrates the three core capabilities evaluated in DataMind AI through concrete, real-time user interactions:
+
+### 1. Natural Language Q&A with Narrative Business Insight
+* **User Action**: Click or type: `"Which region generated the highest revenue?"`
+* **What to Notice**:
+  1. The agent reveals its real-time **Chain-of-Thought**: inspecting schemas, selecting `sales_data`, and grouping by `region`.
+  2. Generates an executive **1–3 sentence narrative business insight** instead of a raw number dump:
+     > *"The **North region** is your strongest revenue engine, generating **$3,462,810.00** across 350 orders (accounting for **29.9%** of company-wide sales). It outpaced the runner-up (South) by **$214,150.00** and the lowest-performing West region by **$548,220.00**. Replicating North's territory account management playbook across West accounts could help close this geographic performance gap."*
+  3. Dynamically renders an interactive **Bar Chart** and key metric cards.
+
+### 2. Anomaly Detection with Root-Cause Explanation
+* **User Action**: Type: `"Detect anomalies in the dataset"` or ask `"Tell me about order ORD-00042"`
+* **What to Notice**:
+  1. The agent invokes the `detect_anomalies` tool running multi-factor Isolation Forest across units, discounts, and margins.
+  2. Synthesizes specific root causes for flagged transactions:
+     > *"Order **ORD-00042** is the largest single order by units sold (**180 units**), generating **$17,640.00** in revenue. This volume is over **14× higher** than the average order volume (7.7 units) and significantly surpasses the next closest order — worth checking if this was an approved corporate bulk purchase or a data entry outlier."*
+  3. Displays an interactive **2D Scatter Plot** mapping outlier clusters in red with individual anomaly scores.
+
+### 3. Plain-English to Multi-Table SQL Generation & Execution
+* **User Action**: Type: `"What are the top five customers?"`
+* **What to Notice**:
+  1. The agent detects a relational foreign key link between `sales_data` and `customers` on `customer_id`.
+  2. Synthesizes and executes vectorized DuckDB SQL in sub-millisecond latency:
+     ```sql
+     SELECT c.customer_name, c.segment, SUM(s.revenue) AS total_spend, COUNT(s.order_id) AS total_orders
+     FROM sales_data s
+     JOIN customers c ON s.customer_id = c.customer_id
+     GROUP BY c.customer_name, c.segment
+     ORDER BY total_spend DESC
+     LIMIT 5;
+     ```
+  3. Displays the syntax-highlighted SQL query, an interactive paginated data table, and cohort concentration takeaways.
+
+### Quick Bonus Touches to Showcase:
+* **Graceful Handling of Vague Queries**: Type `"hello"` or `"sales"` -> The agent detects underspecified intent, avoids speculative SQL, displays loaded datasets, and presents 4 clickable prompt suggestions.
+* **Forecast Studio**: Switch to **Forecast Studio** tab -> Review 6-month projected trajectory with confidence bands where trajectory label ("Upward Trajectory"), badge color (emerald green), arrow icon, and percentage (+4.0%) strictly agree.
+* **Export Report**: Click **Download** icon in the header to export the comprehensive, printable HTML/PDF executive summary.

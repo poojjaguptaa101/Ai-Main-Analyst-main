@@ -4,6 +4,7 @@ from app.engine.forecaster import forecaster
 
 router = APIRouter(prefix="/api/forecast", tags=["Forecasting"])
 
+@router.post("")
 @router.post("/predict")
 def forecast_endpoint(req: ForecastRequest):
     try:

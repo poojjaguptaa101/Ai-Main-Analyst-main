@@ -41,6 +41,20 @@ BENCHMARK_CASES = [
         "question": "Detect anomalies in the dataset.",
         "expected_tool": "detect_anomalies",
         "expected_keyword": "anomal"
+    },
+    {
+        "id": "TC-06",
+        "category": "Vague / Ambiguous Query",
+        "question": "hello",
+        "expected_tool": "clarify",
+        "expected_keyword": "clarify"
+    },
+    {
+        "id": "TC-07",
+        "category": "Specific Entity Lookup",
+        "question": "Tell me about order ORD-00042",
+        "expected_tool": "run_sql",
+        "expected_keyword": "ORD-00042"
     }
 ]
 
@@ -64,7 +78,8 @@ def run_evaluation_benchmark() -> Dict[str, Any]:
         has_sql = bool(res.get("sql_query"))
         has_insights = len(res.get("insights", [])) > 0
         has_thought = len(res.get("thought_process", [])) > 0
-        is_pass = has_thought and (has_sql or res.get("data_table")) and has_insights
+        is_clarify = res.get("action") == "clarify"
+        is_pass = has_thought and (has_sql or res.get("data_table") or is_clarify) and has_insights
         
         if is_pass:
             passed += 1
