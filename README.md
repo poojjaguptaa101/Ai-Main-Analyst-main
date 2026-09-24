@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # DataMind AI — Autonomous Enterprise Data Analyst & BI Copilot
 
 [![Python](https://img.shields.io/badge/Python-3.12%20%7C%203.13-blue.svg)](https://www.python.org/)
@@ -251,10 +250,4 @@ This script demonstrates the three core capabilities evaluated in DataMind AI th
      ```
   3. Displays the syntax-highlighted SQL query, an interactive paginated data table, and cohort concentration takeaways.
 
-### Quick Bonus Touches to Showcase:
-* **Graceful Handling of Vague Queries**: Type `"hello"` or `"sales"` -> The agent detects underspecified intent, avoids speculative SQL, displays loaded datasets, and presents 4 clickable prompt suggestions.
-* **Forecast Studio**: Switch to **Forecast Studio** tab -> Review 6-month projected trajectory with confidence bands where trajectory label ("Upward Trajectory"), badge color (emerald green), arrow icon, and percentage (+4.0%) strictly agree.
-* **Export Report**: Click **Download** icon in the header to export the comprehensive, printable HTML/PDF executive summary.
-=======
-# Ai-Main-Analyst-main
->>>>>>> 9ede858297f2c6430bac789a49a54b0e612af4d7
+  
